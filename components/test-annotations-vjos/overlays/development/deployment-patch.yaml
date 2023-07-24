@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-annotations-vjos
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/tnevrlka-test/build-e2e-frtg-tenant/test-annotations-app-iytg/test-annotations-vjos@sha256:b684fee804f92507ea21cbfb201b33e9cde4370733206072b362e40017af7cbf
+        name: my-nginx
+        resources: {}
+status: {}
